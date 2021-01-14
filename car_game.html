@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165860138-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-165860138-1');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Car Game</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="stylesheet" href="car_style.css">
+</head>
+
+<body>
+<div class="score"></div>
+
+<div class="game">
+    <div class="startScreen">
+<!--front page-->
+        <div class="winning-message" id="winningMessage">
+
+            <div data-winning-message-text>Use arrow key to move<br> If you hit another car you will lose</div>
+            <button id="restartButton">Start</button>
+        </div>
+<!--end front page-->
+    </div>
+    <div class="gameArea hide">
+
+        <div class="left-arrow arrow"><i class="fas fa-arrow-left myArrowL"></i></div>
+        <div class="right-arrow arrow"><i class="fas fa-arrow-right myArrowR"></i></div>
+
+        <div class="rode"></div>
+    </div>
+</div>
+
+
+    <script src="car_js.js"></script>
+
+</body>
+
+</html>
